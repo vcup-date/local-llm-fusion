@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.gguf
+models/
+.venv/
+venv/
+*.log
+/tmp/
+results/*gen*.json
+.DS_Store

@@ -1,0 +1,1536 @@
+{
+  "dataset": "math500",
+  "n": 50,
+  "summary": {
+    "solo-35b": {
+      "acc": 0.78,
+      "correct": 39,
+      "n": 50,
+      "avg_tok": 619.76,
+      "avg_s": 4.965776782035828
+    },
+    "solo-27b": {
+      "acc": 0.64,
+      "correct": 32,
+      "n": 50,
+      "avg_tok": 635.18,
+      "avg_s": 20.71901150226593
+    },
+    "fusion-35b-35b": {
+      "acc": 0.76,
+      "correct": 38,
+      "n": 50,
+      "avg_tok": 1624.38,
+      "avg_s": 14.02478533744812
+    },
+    "fusion-35b-27b": {
+      "acc": 0.78,
+      "correct": 39,
+      "n": 50,
+      "avg_tok": 1599.76,
+      "avg_s": 28.960374698638915
+    }
+  },
+  "per_q": [
+    {
+      "i": 0,
+      "gold": "\\left( 3, \\frac{\\pi}{2} \\right)",
+      "results": {
+        "solo-35b": {
+          "pred": "\\left(3, \\frac{\\pi}{2}\\right)",
+          "ok": true,
+          "t": 2.6,
+          "tok": 400
+        },
+        "solo-27b": {
+          "pred": "(3, \\frac{\\pi}{2})",
+          "ok": false,
+          "t": 9.1,
+          "tok": 359
+        },
+        "fusion-35b-35b": {
+          "pred": "(3, \\frac{\\pi}{2})",
+          "ok": false,
+          "t": 7.2,
+          "tok": 967
+        },
+        "fusion-35b-27b": {
+          "pred": "(3, \\frac{\\pi}{2})",
+          "ok": false,
+          "t": 14.0,
+          "tok": 786
+        }
+      }
+    },
+    {
+      "i": 1,
+      "gold": "p - q",
+      "results": {
+        "solo-35b": {
+          "pred": "p - q",
+          "ok": true,
+          "t": 6.5,
+          "tok": 838
+        },
+        "solo-27b": {
+          "pred": "p - q",
+          "ok": true,
+          "t": 24.3,
+          "tok": 782
+        },
+        "fusion-35b-35b": {
+          "pred": "p - q",
+          "ok": true,
+          "t": 15.7,
+          "tok": 1969
+        },
+        "fusion-35b-27b": {
+          "pred": "p - q",
+          "ok": true,
+          "t": 36.2,
+          "tok": 1912
+        }
+      }
+    },
+    {
+      "i": 2,
+      "gold": "\\frac{14}{3}",
+      "results": {
+        "solo-35b": {
+          "pred": "\\frac{14}{3}",
+          "ok": true,
+          "t": 4.1,
+          "tok": 500
+        },
+        "solo-27b": {
+          "pred": "\\frac{14}{3}",
+          "ok": true,
+          "t": 19.5,
+          "tok": 520
+        },
+        "fusion-35b-35b": {
+          "pred": "\\frac{14}{3}",
+          "ok": true,
+          "t": 12.0,
+          "tok": 1245
+        },
+        "fusion-35b-27b": {
+          "pred": "\\frac{14}{3}",
+          "ok": true,
+          "t": 26.8,
+          "tok": 1243
+        }
+      }
+    },
+    {
+      "i": 3,
+      "gold": "9",
+      "results": {
+        "solo-35b": {
+          "pred": "9",
+          "ok": true,
+          "t": 3.4,
+          "tok": 339
+        },
+        "solo-27b": {
+          "pred": "9",
+          "ok": true,
+          "t": 14.9,
+          "tok": 342
+        },
+        "fusion-35b-35b": {
+          "pred": "9",
+          "ok": true,
+          "t": 9.5,
+          "tok": 907
+        },
+        "fusion-35b-27b": {
+          "pred": "9",
+          "ok": true,
+          "t": 23.5,
+          "tok": 948
+        }
+      }
+    },
+    {
+      "i": 4,
+      "gold": "\\text{Evelyn}",
+      "results": {
+        "solo-35b": {
+          "pred": "Evelyn",
+          "ok": false,
+          "t": 6.1,
+          "tok": 594
+        },
+        "solo-27b": {
+          "pred": "Evelyn",
+          "ok": false,
+          "t": 28.8,
+          "tok": 646
+        },
+        "fusion-35b-35b": {
+          "pred": "Evelyn",
+          "ok": false,
+          "t": 24.0,
+          "tok": 2117
+        },
+        "fusion-35b-27b": {
+          "pred": "Evelyn",
+          "ok": false,
+          "t": 45.8,
+          "tok": 1883
+        }
+      }
+    },
+    {
+      "i": 5,
+      "gold": "42",
+      "results": {
+        "solo-35b": {
+          "pred": "42",
+          "ok": true,
+          "t": 2.9,
+          "tok": 257
+        },
+        "solo-27b": {
+          "pred": "42",
+          "ok": true,
+          "t": 20.3,
+          "tok": 426
+        },
+        "fusion-35b-35b": {
+          "pred": "42",
+          "ok": true,
+          "t": 7.0,
+          "tok": 579
+        },
+        "fusion-35b-27b": {
+          "pred": "42",
+          "ok": true,
+          "t": 17.2,
+          "tok": 721
+        }
+      }
+    },
+    {
+      "i": 6,
+      "gold": "27",
+      "results": {
+        "solo-35b": {
+          "pred": "27",
+          "ok": true,
+          "t": 6.1,
+          "tok": 584
+        },
+        "solo-27b": {
+          "pred": "27",
+          "ok": true,
+          "t": 28.9,
+          "tok": 654
+        },
+        "fusion-35b-35b": {
+          "pred": "27",
+          "ok": true,
+          "t": 15.0,
+          "tok": 1372
+        },
+        "fusion-35b-27b": {
+          "pred": "27",
+          "ok": true,
+          "t": 30.7,
+          "tok": 1258
+        }
+      }
+    },
+    {
+      "i": 7,
+      "gold": "90^\\circ",
+      "results": {
+        "solo-35b": {
+          "pred": "90",
+          "ok": false,
+          "t": 8.1,
+          "tok": 853
+        },
+        "solo-27b": {
+          "pred": "90",
+          "ok": false,
+          "t": 38.8,
+          "tok": 1020
+        },
+        "fusion-35b-35b": {
+          "pred": "90",
+          "ok": false,
+          "t": 21.6,
+          "tok": 2308
+        },
+        "fusion-35b-27b": {
+          "pred": "90",
+          "ok": false,
+          "t": 44.2,
+          "tok": 2144
+        }
+      }
+    },
+    {
+      "i": 8,
+      "gold": "3\\sqrt{13}",
+      "results": {
+        "solo-35b": {
+          "pred": "3\\sqrt{13}",
+          "ok": true,
+          "t": 3.5,
+          "tok": 419
+        },
+        "solo-27b": {
+          "pred": "3\\sqrt{13}",
+          "ok": true,
+          "t": 13.8,
+          "tok": 359
+        },
+        "fusion-35b-35b": {
+          "pred": "3\\sqrt{13}",
+          "ok": true,
+          "t": 9.0,
+          "tok": 1021
+        },
+        "fusion-35b-27b": {
+          "pred": "3\\sqrt{13}",
+          "ok": true,
+          "t": 18.5,
+          "tok": 959
+        }
+      }
+    },
+    {
+      "i": 9,
+      "gold": "4",
+      "results": {
+        "solo-35b": {
+          "pred": "4",
+          "ok": true,
+          "t": 10.5,
+          "tok": 1024
+        },
+        "solo-27b": {
+          "pred": "1",
+          "ok": false,
+          "t": 49.5,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "4",
+          "ok": true,
+          "t": 34.0,
+          "tok": 3072
+        },
+        "fusion-35b-27b": {
+          "pred": "5",
+          "ok": false,
+          "t": 61.5,
+          "tok": 3072
+        }
+      }
+    },
+    {
+      "i": 10,
+      "gold": "2220",
+      "results": {
+        "solo-35b": {
+          "pred": "2220",
+          "ok": true,
+          "t": 7.7,
+          "tok": 865
+        },
+        "solo-27b": {
+          "pred": "2",
+          "ok": false,
+          "t": 38.9,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "2220",
+          "ok": true,
+          "t": 23.2,
+          "tok": 2428
+        },
+        "fusion-35b-27b": {
+          "pred": "2220",
+          "ok": true,
+          "t": 56.1,
+          "tok": 2589
+        }
+      }
+    },
+    {
+      "i": 11,
+      "gold": "\\frac{3}{56}",
+      "results": {
+        "solo-35b": {
+          "pred": "1",
+          "ok": false,
+          "t": 8.6,
+          "tok": 1024
+        },
+        "solo-27b": {
+          "pred": "360",
+          "ok": false,
+          "t": 34.9,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "8",
+          "ok": false,
+          "t": 27.3,
+          "tok": 3072
+        },
+        "fusion-35b-27b": {
+          "pred": "720",
+          "ok": false,
+          "t": 55.4,
+          "tok": 3072
+        }
+      }
+    },
+    {
+      "i": 12,
+      "gold": "284",
+      "results": {
+        "solo-35b": {
+          "pred": "1",
+          "ok": false,
+          "t": 8.3,
+          "tok": 1024
+        },
+        "solo-27b": {
+          "pred": "220",
+          "ok": false,
+          "t": 32.2,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "284",
+          "ok": true,
+          "t": 19.7,
+          "tok": 2343
+        },
+        "fusion-35b-27b": {
+          "pred": "284",
+          "ok": true,
+          "t": 43.5,
+          "tok": 2370
+        }
+      }
+    },
+    {
+      "i": 13,
+      "gold": "5",
+      "results": {
+        "solo-35b": {
+          "pred": "5",
+          "ok": true,
+          "t": 1.7,
+          "tok": 202
+        },
+        "solo-27b": {
+          "pred": "5",
+          "ok": true,
+          "t": 9.8,
+          "tok": 296
+        },
+        "fusion-35b-35b": {
+          "pred": "5",
+          "ok": true,
+          "t": 4.9,
+          "tok": 571
+        },
+        "fusion-35b-27b": {
+          "pred": "5",
+          "ok": true,
+          "t": 11.9,
+          "tok": 570
+        }
+      }
+    },
+    {
+      "i": 14,
+      "gold": "\\sqrt{51}",
+      "results": {
+        "solo-35b": {
+          "pred": "\\sqrt{51}",
+          "ok": true,
+          "t": 5.9,
+          "tok": 719
+        },
+        "solo-27b": {
+          "pred": "\\sqrt{51}",
+          "ok": true,
+          "t": 22.1,
+          "tok": 724
+        },
+        "fusion-35b-35b": {
+          "pred": "\\sqrt{51}",
+          "ok": true,
+          "t": 15.6,
+          "tok": 1828
+        },
+        "fusion-35b-27b": {
+          "pred": "\\sqrt{51}",
+          "ok": true,
+          "t": 33.2,
+          "tok": 1679
+        }
+      }
+    },
+    {
+      "i": 15,
+      "gold": "6 - 5i",
+      "results": {
+        "solo-35b": {
+          "pred": "6 - 5i",
+          "ok": true,
+          "t": 6.2,
+          "tok": 799
+        },
+        "solo-27b": {
+          "pred": "6 - 5i",
+          "ok": true,
+          "t": 28.6,
+          "tok": 863
+        },
+        "fusion-35b-35b": {
+          "pred": "6 - 5i",
+          "ok": true,
+          "t": 17.6,
+          "tok": 2005
+        },
+        "fusion-35b-27b": {
+          "pred": "6 - 5i",
+          "ok": true,
+          "t": 37.3,
+          "tok": 2070
+        }
+      }
+    },
+    {
+      "i": 16,
+      "gold": "-50",
+      "results": {
+        "solo-35b": {
+          "pred": "-50",
+          "ok": true,
+          "t": 3.5,
+          "tok": 434
+        },
+        "solo-27b": {
+          "pred": "-50",
+          "ok": true,
+          "t": 8.1,
+          "tok": 255
+        },
+        "fusion-35b-35b": {
+          "pred": "-50",
+          "ok": true,
+          "t": 5.9,
+          "tok": 651
+        },
+        "fusion-35b-27b": {
+          "pred": "-50",
+          "ok": true,
+          "t": 11.6,
+          "tok": 736
+        }
+      }
+    },
+    {
+      "i": 17,
+      "gold": "\\pi",
+      "results": {
+        "solo-35b": {
+          "pred": "0",
+          "ok": false,
+          "t": 8.7,
+          "tok": 1024
+        },
+        "solo-27b": {
+          "pred": "3",
+          "ok": false,
+          "t": 33.7,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "3",
+          "ok": false,
+          "t": 26.7,
+          "tok": 3072
+        },
+        "fusion-35b-27b": {
+          "pred": "3",
+          "ok": false,
+          "t": 52.1,
+          "tok": 3072
+        }
+      }
+    },
+    {
+      "i": 18,
+      "gold": "28",
+      "results": {
+        "solo-35b": {
+          "pred": "2",
+          "ok": false,
+          "t": 8.4,
+          "tok": 1024
+        },
+        "solo-27b": {
+          "pred": "4.",
+          "ok": false,
+          "t": 33.5,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "0.5",
+          "ok": false,
+          "t": 26.9,
+          "tok": 3072
+        },
+        "fusion-35b-27b": {
+          "pred": "-2",
+          "ok": false,
+          "t": 53.3,
+          "tok": 3072
+        }
+      }
+    },
+    {
+      "i": 19,
+      "gold": "3",
+      "results": {
+        "solo-35b": {
+          "pred": "3",
+          "ok": true,
+          "t": 7.5,
+          "tok": 968
+        },
+        "solo-27b": {
+          "pred": "2",
+          "ok": false,
+          "t": 33.6,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "3",
+          "ok": true,
+          "t": 17.0,
+          "tok": 1913
+        },
+        "fusion-35b-27b": {
+          "pred": "3",
+          "ok": true,
+          "t": 39.5,
+          "tok": 2105
+        }
+      }
+    },
+    {
+      "i": 20,
+      "gold": "6+9i",
+      "results": {
+        "solo-35b": {
+          "pred": "6+9i",
+          "ok": true,
+          "t": 1.6,
+          "tok": 176
+        },
+        "solo-27b": {
+          "pred": "6+9i",
+          "ok": true,
+          "t": 7.1,
+          "tok": 206
+        },
+        "fusion-35b-35b": {
+          "pred": "6+9i",
+          "ok": true,
+          "t": 3.9,
+          "tok": 437
+        },
+        "fusion-35b-27b": {
+          "pred": "6+9i",
+          "ok": true,
+          "t": 9.0,
+          "tok": 490
+        }
+      }
+    },
+    {
+      "i": 21,
+      "gold": "13535",
+      "results": {
+        "solo-35b": {
+          "pred": "4.89",
+          "ok": false,
+          "t": 7.5,
+          "tok": 1024
+        },
+        "solo-27b": {
+          "pred": "13",
+          "ok": false,
+          "t": 30.2,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "0.40",
+          "ok": false,
+          "t": 23.3,
+          "tok": 3072
+        },
+        "fusion-35b-27b": {
+          "pred": "13535",
+          "ok": true,
+          "t": 45.2,
+          "tok": 2989
+        }
+      }
+    },
+    {
+      "i": 22,
+      "gold": "5",
+      "results": {
+        "solo-35b": {
+          "pred": "5",
+          "ok": true,
+          "t": 6.3,
+          "tok": 843
+        },
+        "solo-27b": {
+          "pred": "5",
+          "ok": true,
+          "t": 27.3,
+          "tok": 945
+        },
+        "fusion-35b-35b": {
+          "pred": "5",
+          "ok": true,
+          "t": 17.7,
+          "tok": 2206
+        },
+        "fusion-35b-27b": {
+          "pred": "5",
+          "ok": true,
+          "t": 42.7,
+          "tok": 2435
+        }
+      }
+    },
+    {
+      "i": 23,
+      "gold": "x=5",
+      "results": {
+        "solo-35b": {
+          "pred": "5",
+          "ok": false,
+          "t": 4.5,
+          "tok": 622
+        },
+        "solo-27b": {
+          "pred": "5",
+          "ok": false,
+          "t": 20.3,
+          "tok": 701
+        },
+        "fusion-35b-35b": {
+          "pred": "5",
+          "ok": false,
+          "t": 15.7,
+          "tok": 1932
+        },
+        "fusion-35b-27b": {
+          "pred": "5",
+          "ok": false,
+          "t": 30.2,
+          "tok": 1826
+        }
+      }
+    },
+    {
+      "i": 24,
+      "gold": "10",
+      "results": {
+        "solo-35b": {
+          "pred": "10",
+          "ok": true,
+          "t": 7.5,
+          "tok": 1024
+        },
+        "solo-27b": {
+          "pred": "66200",
+          "ok": false,
+          "t": 29.8,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "10",
+          "ok": true,
+          "t": 16.3,
+          "tok": 2002
+        },
+        "fusion-35b-27b": {
+          "pred": "10",
+          "ok": true,
+          "t": 30.0,
+          "tok": 1641
+        }
+      }
+    },
+    {
+      "i": 25,
+      "gold": "1,-2",
+      "results": {
+        "solo-35b": {
+          "pred": "1",
+          "ok": false,
+          "t": 7.6,
+          "tok": 1024
+        },
+        "solo-27b": {
+          "pred": "2",
+          "ok": false,
+          "t": 29.9,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "-2, 1",
+          "ok": false,
+          "t": 19.8,
+          "tok": 2561
+        },
+        "fusion-35b-27b": {
+          "pred": "-2, 1",
+          "ok": false,
+          "t": 44.3,
+          "tok": 2836
+        }
+      }
+    },
+    {
+      "i": 26,
+      "gold": "144",
+      "results": {
+        "solo-35b": {
+          "pred": "144",
+          "ok": true,
+          "t": 7.7,
+          "tok": 948
+        },
+        "solo-27b": {
+          "pred": "48",
+          "ok": false,
+          "t": 32.0,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "576",
+          "ok": false,
+          "t": 27.7,
+          "tok": 3072
+        },
+        "fusion-35b-27b": {
+          "pred": "144",
+          "ok": true,
+          "t": 44.7,
+          "tok": 2412
+        }
+      }
+    },
+    {
+      "i": 27,
+      "gold": "78",
+      "results": {
+        "solo-35b": {
+          "pred": "78",
+          "ok": true,
+          "t": 2.3,
+          "tok": 293
+        },
+        "solo-27b": {
+          "pred": "78",
+          "ok": true,
+          "t": 9.6,
+          "tok": 323
+        },
+        "fusion-35b-35b": {
+          "pred": "78",
+          "ok": true,
+          "t": 6.8,
+          "tok": 831
+        },
+        "fusion-35b-27b": {
+          "pred": "78",
+          "ok": true,
+          "t": 13.6,
+          "tok": 843
+        }
+      }
+    },
+    {
+      "i": 28,
+      "gold": "-2 + 7i",
+      "results": {
+        "solo-35b": {
+          "pred": "-2 + 7i",
+          "ok": true,
+          "t": 2.8,
+          "tok": 342
+        },
+        "solo-27b": {
+          "pred": "-2 + 7i",
+          "ok": true,
+          "t": 7.7,
+          "tok": 249
+        },
+        "fusion-35b-35b": {
+          "pred": "-2 + 7i",
+          "ok": true,
+          "t": 4.3,
+          "tok": 490
+        },
+        "fusion-35b-27b": {
+          "pred": "-2 + 7i",
+          "ok": true,
+          "t": 14.5,
+          "tok": 704
+        }
+      }
+    },
+    {
+      "i": 29,
+      "gold": "225",
+      "results": {
+        "solo-35b": {
+          "pred": "225",
+          "ok": true,
+          "t": 3.5,
+          "tok": 474
+        },
+        "solo-27b": {
+          "pred": "225",
+          "ok": true,
+          "t": 15.8,
+          "tok": 544
+        },
+        "fusion-35b-35b": {
+          "pred": "225",
+          "ok": true,
+          "t": 9.0,
+          "tok": 1111
+        },
+        "fusion-35b-27b": {
+          "pred": "225",
+          "ok": true,
+          "t": 21.0,
+          "tok": 1135
+        }
+      }
+    },
+    {
+      "i": 30,
+      "gold": "52_8",
+      "results": {
+        "solo-35b": {
+          "pred": "52_8",
+          "ok": true,
+          "t": 2.9,
+          "tok": 385
+        },
+        "solo-27b": {
+          "pred": "52_8",
+          "ok": true,
+          "t": 9.8,
+          "tok": 318
+        },
+        "fusion-35b-35b": {
+          "pred": "52_8",
+          "ok": true,
+          "t": 8.0,
+          "tok": 964
+        },
+        "fusion-35b-27b": {
+          "pred": "52_8",
+          "ok": true,
+          "t": 15.9,
+          "tok": 894
+        }
+      }
+    },
+    {
+      "i": 31,
+      "gold": "11\\sqrt2",
+      "results": {
+        "solo-35b": {
+          "pred": "11\\sqrt{2}",
+          "ok": false,
+          "t": 2.0,
+          "tok": 280
+        },
+        "solo-27b": {
+          "pred": "11\\sqrt{2}",
+          "ok": false,
+          "t": 7.7,
+          "tok": 259
+        },
+        "fusion-35b-35b": {
+          "pred": "11\\sqrt{2}",
+          "ok": false,
+          "t": 5.9,
+          "tok": 727
+        },
+        "fusion-35b-27b": {
+          "pred": "11\\sqrt{2}",
+          "ok": false,
+          "t": 12.2,
+          "tok": 681
+        }
+      }
+    },
+    {
+      "i": 32,
+      "gold": "720",
+      "results": {
+        "solo-35b": {
+          "pred": "720",
+          "ok": true,
+          "t": 3.4,
+          "tok": 434
+        },
+        "solo-27b": {
+          "pred": "720",
+          "ok": true,
+          "t": 14.6,
+          "tok": 482
+        },
+        "fusion-35b-35b": {
+          "pred": "720",
+          "ok": true,
+          "t": 9.2,
+          "tok": 1112
+        },
+        "fusion-35b-27b": {
+          "pred": "720",
+          "ok": true,
+          "t": 19.3,
+          "tok": 1136
+        }
+      }
+    },
+    {
+      "i": 33,
+      "gold": "\\frac{243}{625}",
+      "results": {
+        "solo-35b": {
+          "pred": "\\frac{243}{625}",
+          "ok": true,
+          "t": 6.7,
+          "tok": 910
+        },
+        "solo-27b": {
+          "pred": "\\frac{243}{625}",
+          "ok": true,
+          "t": 25.6,
+          "tok": 900
+        },
+        "fusion-35b-35b": {
+          "pred": "\\frac{243}{625}",
+          "ok": true,
+          "t": 16.0,
+          "tok": 2029
+        },
+        "fusion-35b-27b": {
+          "pred": "\\frac{243}{625}",
+          "ok": true,
+          "t": 34.3,
+          "tok": 2013
+        }
+      }
+    },
+    {
+      "i": 34,
+      "gold": "-125",
+      "results": {
+        "solo-35b": {
+          "pred": "-125",
+          "ok": true,
+          "t": 5.4,
+          "tok": 764
+        },
+        "solo-27b": {
+          "pred": "-125",
+          "ok": true,
+          "t": 20.9,
+          "tok": 750
+        },
+        "fusion-35b-35b": {
+          "pred": "-125",
+          "ok": true,
+          "t": 13.8,
+          "tok": 1810
+        },
+        "fusion-35b-27b": {
+          "pred": "-125",
+          "ok": true,
+          "t": 29.6,
+          "tok": 1821
+        }
+      }
+    },
+    {
+      "i": 35,
+      "gold": "3",
+      "results": {
+        "solo-35b": {
+          "pred": "3",
+          "ok": true,
+          "t": 2.3,
+          "tok": 302
+        },
+        "solo-27b": {
+          "pred": "3",
+          "ok": true,
+          "t": 8.8,
+          "tok": 303
+        },
+        "fusion-35b-35b": {
+          "pred": "3",
+          "ok": true,
+          "t": 10.7,
+          "tok": 1303
+        },
+        "fusion-35b-27b": {
+          "pred": "3",
+          "ok": true,
+          "t": 14.9,
+          "tok": 1008
+        }
+      }
+    },
+    {
+      "i": 36,
+      "gold": "3, 5, 7",
+      "results": {
+        "solo-35b": {
+          "pred": "3, 5, 7",
+          "ok": true,
+          "t": 5.8,
+          "tok": 810
+        },
+        "solo-27b": {
+          "pred": "3, 5, 7",
+          "ok": true,
+          "t": 23.1,
+          "tok": 814
+        },
+        "fusion-35b-35b": {
+          "pred": "3, 5, 7",
+          "ok": true,
+          "t": 14.7,
+          "tok": 1892
+        },
+        "fusion-35b-27b": {
+          "pred": "3, 5, 7",
+          "ok": true,
+          "t": 38.6,
+          "tok": 2192
+        }
+      }
+    },
+    {
+      "i": 37,
+      "gold": "72",
+      "results": {
+        "solo-35b": {
+          "pred": "72",
+          "ok": true,
+          "t": 2.0,
+          "tok": 254
+        },
+        "solo-27b": {
+          "pred": "72",
+          "ok": true,
+          "t": 7.1,
+          "tok": 227
+        },
+        "fusion-35b-35b": {
+          "pred": "72",
+          "ok": true,
+          "t": 5.4,
+          "tok": 591
+        },
+        "fusion-35b-27b": {
+          "pred": "72",
+          "ok": true,
+          "t": 9.0,
+          "tok": 475
+        }
+      }
+    },
+    {
+      "i": 38,
+      "gold": "2000",
+      "results": {
+        "solo-35b": {
+          "pred": "2000",
+          "ok": true,
+          "t": 1.4,
+          "tok": 184
+        },
+        "solo-27b": {
+          "pred": "2000",
+          "ok": true,
+          "t": 8.8,
+          "tok": 287
+        },
+        "fusion-35b-35b": {
+          "pred": "2000",
+          "ok": true,
+          "t": 3.8,
+          "tok": 433
+        },
+        "fusion-35b-27b": {
+          "pred": "2000",
+          "ok": true,
+          "t": 7.3,
+          "tok": 417
+        }
+      }
+    },
+    {
+      "i": 39,
+      "gold": "23",
+      "results": {
+        "solo-35b": {
+          "pred": "23",
+          "ok": true,
+          "t": 4.3,
+          "tok": 586
+        },
+        "solo-27b": {
+          "pred": "23",
+          "ok": true,
+          "t": 18.2,
+          "tok": 650
+        },
+        "fusion-35b-35b": {
+          "pred": "23",
+          "ok": true,
+          "t": 14.6,
+          "tok": 1860
+        },
+        "fusion-35b-27b": {
+          "pred": "23",
+          "ok": true,
+          "t": 31.5,
+          "tok": 1907
+        }
+      }
+    },
+    {
+      "i": 40,
+      "gold": "12",
+      "results": {
+        "solo-35b": {
+          "pred": "12",
+          "ok": true,
+          "t": 2.3,
+          "tok": 310
+        },
+        "solo-27b": {
+          "pred": "12",
+          "ok": true,
+          "t": 9.2,
+          "tok": 305
+        },
+        "fusion-35b-35b": {
+          "pred": "12",
+          "ok": true,
+          "t": 5.9,
+          "tok": 745
+        },
+        "fusion-35b-27b": {
+          "pred": "12",
+          "ok": true,
+          "t": 11.6,
+          "tok": 717
+        }
+      }
+    },
+    {
+      "i": 41,
+      "gold": "17",
+      "results": {
+        "solo-35b": {
+          "pred": "17",
+          "ok": true,
+          "t": 7.6,
+          "tok": 1017
+        },
+        "solo-27b": {
+          "pred": "17",
+          "ok": true,
+          "t": 22.9,
+          "tok": 822
+        },
+        "fusion-35b-35b": {
+          "pred": "17",
+          "ok": true,
+          "t": 14.1,
+          "tok": 1805
+        },
+        "fusion-35b-27b": {
+          "pred": "17",
+          "ok": true,
+          "t": 35.5,
+          "tok": 1934
+        }
+      }
+    },
+    {
+      "i": 42,
+      "gold": "4",
+      "results": {
+        "solo-35b": {
+          "pred": "4",
+          "ok": true,
+          "t": 2.0,
+          "tok": 262
+        },
+        "solo-27b": {
+          "pred": "4",
+          "ok": true,
+          "t": 8.6,
+          "tok": 291
+        },
+        "fusion-35b-35b": {
+          "pred": "4",
+          "ok": true,
+          "t": 6.6,
+          "tok": 838
+        },
+        "fusion-35b-27b": {
+          "pred": "4",
+          "ok": true,
+          "t": 10.6,
+          "tok": 706
+        }
+      }
+    },
+    {
+      "i": 43,
+      "gold": "70 \\sqrt{2}",
+      "results": {
+        "solo-35b": {
+          "pred": "2",
+          "ok": false,
+          "t": 8.2,
+          "tok": 1024
+        },
+        "solo-27b": {
+          "pred": "0",
+          "ok": false,
+          "t": 33.4,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "3",
+          "ok": false,
+          "t": 24.8,
+          "tok": 3072
+        },
+        "fusion-35b-27b": {
+          "pred": "0",
+          "ok": false,
+          "t": 49.3,
+          "tok": 3072
+        }
+      }
+    },
+    {
+      "i": 44,
+      "gold": "1.25",
+      "results": {
+        "solo-35b": {
+          "pred": "1.25",
+          "ok": true,
+          "t": 4.1,
+          "tok": 547
+        },
+        "solo-27b": {
+          "pred": "1.25",
+          "ok": true,
+          "t": 18.4,
+          "tok": 625
+        },
+        "fusion-35b-35b": {
+          "pred": "1.25",
+          "ok": true,
+          "t": 10.2,
+          "tok": 1283
+        },
+        "fusion-35b-27b": {
+          "pred": "1.25",
+          "ok": true,
+          "t": 24.6,
+          "tok": 1415
+        }
+      }
+    },
+    {
+      "i": 45,
+      "gold": "2",
+      "results": {
+        "solo-35b": {
+          "pred": "2",
+          "ok": true,
+          "t": 1.3,
+          "tok": 164
+        },
+        "solo-27b": {
+          "pred": "2",
+          "ok": true,
+          "t": 4.9,
+          "tok": 152
+        },
+        "fusion-35b-35b": {
+          "pred": "2",
+          "ok": true,
+          "t": 4.1,
+          "tok": 479
+        },
+        "fusion-35b-27b": {
+          "pred": "2",
+          "ok": true,
+          "t": 7.8,
+          "tok": 505
+        }
+      }
+    },
+    {
+      "i": 46,
+      "gold": "6",
+      "results": {
+        "solo-35b": {
+          "pred": "6",
+          "ok": true,
+          "t": 7.5,
+          "tok": 1024
+        },
+        "solo-27b": {
+          "pred": "1",
+          "ok": false,
+          "t": 29.8,
+          "tok": 1024
+        },
+        "fusion-35b-35b": {
+          "pred": "6",
+          "ok": true,
+          "t": 24.8,
+          "tok": 3072
+        },
+        "fusion-35b-27b": {
+          "pred": "6",
+          "ok": true,
+          "t": 44.9,
+          "tok": 2832
+        }
+      }
+    },
+    {
+      "i": 47,
+      "gold": "5",
+      "results": {
+        "solo-35b": {
+          "pred": "5",
+          "ok": true,
+          "t": 3.7,
+          "tok": 484
+        },
+        "solo-27b": {
+          "pred": "5",
+          "ok": true,
+          "t": 15.4,
+          "tok": 511
+        },
+        "fusion-35b-35b": {
+          "pred": "5",
+          "ok": true,
+          "t": 11.8,
+          "tok": 1479
+        },
+        "fusion-35b-27b": {
+          "pred": "5",
+          "ok": true,
+          "t": 20.4,
+          "tok": 1317
+        }
+      }
+    },
+    {
+      "i": 48,
+      "gold": "\\frac{3}{2}",
+      "results": {
+        "solo-35b": {
+          "pred": "\\frac{3}{2}",
+          "ok": true,
+          "t": 1.7,
+          "tok": 230
+        },
+        "solo-27b": {
+          "pred": "\\frac{3}{2}",
+          "ok": true,
+          "t": 7.2,
+          "tok": 237
+        },
+        "fusion-35b-35b": {
+          "pred": "\\frac{3}{2}",
+          "ok": true,
+          "t": 5.2,
+          "tok": 591
+        },
+        "fusion-35b-27b": {
+          "pred": "\\frac{3}{2}",
+          "ok": true,
+          "t": 9.5,
+          "tok": 565
+        }
+      }
+    },
+    {
+      "i": 49,
+      "gold": "83",
+      "results": {
+        "solo-35b": {
+          "pred": "83",
+          "ok": true,
+          "t": 2.6,
+          "tok": 356
+        },
+        "solo-27b": {
+          "pred": "83",
+          "ok": true,
+          "t": 8.6,
+          "tok": 300
+        },
+        "fusion-35b-35b": {
+          "pred": "83",
+          "ok": true,
+          "t": 7.2,
+          "tok": 908
+        },
+        "fusion-35b-27b": {
+          "pred": "83",
+          "ok": true,
+          "t": 13.9,
+          "tok": 809
+        }
+      }
+    }
+  ]
+}
